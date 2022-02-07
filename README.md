@@ -1,4 +1,4 @@
-<h1> Static website for bulgarian brand which should be used to present the brand identity on the web</h1>
+<h1> Static website from scratch for bulgarian brand which should be used to present the brand identity on the web</h1>
 
 
 <h4> The website is not yet finished but the biggest part from the desktop web-page is implemented </h4>
