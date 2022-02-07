@@ -13,4 +13,6 @@
 <li>Add a sticky navbar(probably)</li>
 </ul>
 
+
+I've done everything on this web-page, which means that the code and the design ideas are mine <br>
 This is my first website for a corporate brand since i started working with JS,HTML and CSS
