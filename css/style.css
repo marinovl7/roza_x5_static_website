@@ -132,8 +132,7 @@ body {
   margin-bottom: 3.2rem;
   color: #333;
 }
-.link-learn-more:visited,
-.link-learn-more:link {
+.link-learn-more {
   display: inline-block;
   color: #fff;
   background-color: rgba(235, 126, 126, 1);
@@ -254,8 +253,11 @@ body {
 /* ****************************************************** */
 /* *******SECTION 2*************** */
 /* ****************************************************** */
+/* .section-dograma {
+  padding: 2.4rem 9.6rem 4.8rem 0;
+} */
 .section-dograma {
-  padding: 4.8rem 9.6rem 4.8rem 0;
+  padding-top: 2.4rem;
 }
 .grid-container-pvc-dograma {
   display: grid;
@@ -263,6 +265,12 @@ body {
   column-gap: 6.4rem;
   align-items: center;
   justify-content: center;
+}
+.container-special {
+  margin-top: 2.4rem;
+}
+.heading-special {
+  margin-bottom: 4rem !important;
 }
 .subheading {
   display: block;
@@ -327,14 +335,14 @@ body {
   display: block;
   padding: 3.2rem 6.4rem;
   background-color: rgba(235, 126, 126, 1);
-  margin-top: 2.4rem;
+  margin-top: 3.2rem;
   border-radius: 11px;
   font-size: 2.4rem;
   text-align: center;
   text-decoration: none;
   color: #fff;
   transition: all 0.4s ease-in;
-  margin-bottom: 12.2rem;
+  margin-bottom: 10rem;
 }
 .link-botom:hover,
 .link-botom:active {
@@ -344,7 +352,8 @@ body {
   height: 58.6rem;
 }
 .link-no-margin {
-  margin-bottom: 0 !important;
+  margin-top: 4rem;
+  margin-bottom: 4.8rem !important;
 }
 /* ****************************************************** */
 /* *******SECTION 3*************** */
@@ -359,7 +368,7 @@ body {
   height: 60rem;
   background-color: #fff;
   padding: 0 3.2rem;
-  margin: 9.6rem auto 0 auto;
+  margin: 4.8rem auto 0 auto;
   border-bottom: 2px solid rgba(235, 126, 126, 1);
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
 }
@@ -483,6 +492,7 @@ body {
   border-radius: 11px;
   display: flex;
   gap: 4.8rem;
+  margin-bottom: 4.8rem;
 }
 .card-img {
   border-top-left-radius: 11px;
