@@ -6,8 +6,12 @@ const btnLeft = document.querySelector(".slider__btn--left");
 const dotContainer = document.querySelector(".dots");
 let currSlide = 0;
 const maxSlide = slides.length;
+const year = document.querySelector(".year");
 
 const slider = document.querySelector(".slider");
+
+//Getting the current year for the footer and the copywrite
+year.textContent = new Date().getFullYear();
 
 function createDots() {
   slides.forEach((s, i) => {
