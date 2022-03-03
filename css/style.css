@@ -618,14 +618,17 @@ body {
   display: flex;
   gap: 4.8rem;
   margin-bottom: 4.8rem;
+  max-height: 50rem;
 }
 .card-img {
   border-top-left-radius: 11px;
   border-bottom-left-radius: 11px;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 50rem;
 }
 .card-content {
-  padding: 4.8rem;
+  padding: 3rem;
 }
 .heading-card {
   color: #ffff;
@@ -635,8 +638,52 @@ body {
   font-size: 1.4rem;
   line-height: 1.3;
 }
+.characteristics-icon-cards {
+  color: #fbe5e5 !important;
+}
+.characteristics-text-cards {
+  color: #fbe5e5 !important;
+}
+.characteristics-cards {
+  gap: 0.8rem !important;
+  margin-top: 1.4rem !important;
+}
+.heading-card-special {
+  margin-bottom: 1.4rem !important;
+  color: #fff;
+  font-weight: 700;
+}
+
 /* ****************************************************** */
-/* *******Footes*************** */
+/* *******Section Vetrozashtitni Zavesi*************** */
+/* ****************************************************** */
+.section-vetrozashtitni-zavesi {
+  margin-top: 4.8rem;
+  padding: 4.8rem 0 9.6rem 0;
+}
+.container-vetrozashtitni-zavesi {
+  display: flex;
+  gap: 9.3rem;
+  justify-content: center;
+  align-items: center;
+}
+.img-vz {
+  max-width: 57.4rem;
+  max-height: 51rem;
+  border: 2px solid black;
+}
+.vz-htext {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.characteristics-list-item-vz {
+  line-height: 1.3;
+}
+.text-vz-special {
+  font-weight: 500;
+}
+/* ****************************************************** */
+/* *******Footer*************** */
 /* ****************************************************** */
 .ending-text {
   background-color: #eb7e7e;
@@ -691,6 +738,7 @@ body {
   color: #fbe5e5;
   font-size: 1.4rem;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .list-item-footer:hover,
 .list-item-footer:active {
@@ -701,6 +749,7 @@ body {
   color: #fbe5e5;
   font-size: 1.4rem;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .contact-text:hover,
 .contact-text:active {
@@ -717,6 +766,7 @@ body {
   color: #fbe5e5;
   font-size: 4.8rem;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .icon-container-footer:hover,
 .icon-container-footer:active ion-icon {
