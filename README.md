@@ -5,10 +5,10 @@
 <h2>TODOS</h2>
 
 <ul>
-<li>1 more section should be implemented</li>
 <li>Responsivnes to smaller laptops,tablets and mobile</li>
-<li>Add a sticky navbar(probably)</li>
-<li>Optimization of images</li>
+<li>Fix the sticky navbar by gallery</li>
+<li>Optimization of images and code</li>
+<li>Deployment</li>
 </ul>
 
 I've done everything on this web-page, which means that the code and the design ideas are mine <br>

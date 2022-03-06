@@ -7,7 +7,8 @@ const dotContainer = document.querySelector(".dots");
 let currSlide = 0;
 const maxSlide = slides.length;
 const year = document.querySelector(".year");
-
+const sectionHero = document.querySelector(".section-hero");
+const mainNav = document.querySelector(".main-nav");
 const slider = document.querySelector(".slider");
 
 //Getting the current year for the footer and the copywrite
@@ -96,3 +97,26 @@ function setSlideVisibility(slideNum) {
     else slide.classList.remove("feature-active");
   });
 }
+
+lightGallery(document.querySelector(".gallery"));
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  console.log(entry);
+  if (!entry.isIntersecting) {
+    mainNav.classList.add("sticky");
+  } else {
+    mainNav.classList.remove("sticky");
+  }
+};
+
+const navHeight = mainNav.getBoundingClientRect().height;
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+
+headerObserver.observe(sectionHero);
+
+const gallery = document.querySelector(".section-gallery");
