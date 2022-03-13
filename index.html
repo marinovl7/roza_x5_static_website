@@ -13,13 +13,19 @@
     />
     <!--  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lightgallery.min.css" />
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/lightgallery.min.js"></script>
+    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script
       src="https://kit.fontawesome.com/8a363ae096.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+   
+    
     <link rel="stylesheet" href="css/style.css" />
 
     <title>РОЗА-Х5 &mdash; Kaчествена дограма</title>
@@ -830,100 +836,137 @@
             Галерия
           </h2>
         </div>
-     <div class="container">
+     <div class="container container-gallery">
+      <div class="gallery-grid filter-container">
+        <nav class="sidebar">
+          <div class="text-sidebar">
+             Меню
+          </div>
+          <ul class="gallery-sidebar-list">
+             <li data-filter="all" class="gallery-search-button active"><p class="border-left">Всичко</p></li>
+             <li>
+                <p class="feat-btn border-left">Дограма
+                <span class="fas fa-caret-down first"></span>
+                </p>
+                <ul class="feat-show gallery-sidebar-list-under">
+                   <li data-filter="aluminieva-dograma" class="gallery-search-button border-left"><p>Алуминиева дограма</p></li>
+                   <li data-filter="pvc-dograma" class="gallery-search-button border-left"><p>PVC дограма</p></li>
+                </ul>
+             </li>
+             <li>
+              <p class="serv-btn border-left">Врати
+              <span class="fas fa-caret-down second"></span>
+              </p>
+              <ul class="serv-show gallery-sidebar-list-under">
+                 <li data-filter="vrati" class="gallery-search-button"><p>Входни</p></li>
+                 <li><p>Някви</p></li>
+              </ul>
+           </li>
+             <li data-filter="etalbond" class="gallery-search-button"><p class="border-left">Еталбонд</p></li>
+             <li data-filter="muzeini-vitrini" class="gallery-search-button"><p class="border-left">Музейни витрини</p></li>
+             <li data-filter="pvc-konstrukcii" class="gallery-search-button"><p class="border-left">PVC констукции</p></li>
+             <li data-filter="parapeti" class="gallery-search-button"><p class="border-left">Парапети</p></li>
+             <li data-filter="vetrozashtitni" class="gallery-search-button"><p class="border-left"> Ветрозащ. завеси</p></li>
+          </ul>
+       </nav>
+          <div class="gallery">
 
-      <div class="gallery">
-        <a class="nab" href="img/gallery/gallery-photo-7.jpg">
-          <img src="img/gallery/gallery-photo-7.jpg" alt=""/>
-        </a>
-        <a href="img/gallery/gallery-photo-12.jpg">
-          <img src="img/gallery/gallery-photo-12.jpg" alt=""/>
-        </a>
-        <a href="img/gallery/gallery-photo-3.jpg">
+          
+          <a class="filtr-item aluminieva-dograma"  href="img/gallery/gallery-photo-7.jpg">
+            <img src="img/gallery/gallery-photo-7.jpg" alt=""/>
+          </a>
+        
+        
+          
+          <a class="filtr-item aluminieva-dograma"   href="img/gallery/gallery-photo-12.jpg">
+            <img src="img/gallery/gallery-photo-12.jpg" alt=""/>
+          </a>
+        
+        <a class="filtr-item aluminieva-dograma"  href="img/gallery/gallery-photo-3.jpg">
           <img src="img/gallery/gallery-photo-3.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-2.jpg">
+        <a  class="filtr-item pvc-dograma"  href="img/gallery/gallery-photo-2.jpg">
           <img src="img/gallery/gallery-photo-2.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-5.jpg">
+        <a class="filtr-item pvc-dograma"   href="img/gallery/gallery-photo-5.jpg">
           <img src="img/gallery/gallery-photo-5.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-16.jpg">
+        <a class="filtr-item pvc-dograma"   href="img/gallery/gallery-photo-16.jpg">
           <img src="img/gallery/gallery-photo-16.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-14.jpg">
+        <a class="filtr-item etalbond"  href="img/gallery/gallery-photo-14.jpg">
           <img src="img/gallery/gallery-photo-14.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-19.jpg">
+        <a class="filtr-item etalbond"   href="img/gallery/gallery-photo-19.jpg">
           <img src="img/gallery/gallery-photo-19.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-1.jpg">
+        <a class="filtr-item etalbond"   href="img/gallery/gallery-photo-1.jpg">
           <img src="img/gallery/gallery-photo-1.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-10.jpg">
+        <a class="filtr-item pvc-konstrukcii"  href="img/gallery/gallery-photo-10.jpg">
           <img src="img/gallery/gallery-photo-10.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-11.jpg">
+        <a class="filtr-item pvc-konstrukcii"    href="img/gallery/gallery-photo-11.jpg">
           <img src="img/gallery/gallery-photo-11.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-9.jpg">
+        <a class="filtr-item pvc-konstrukcii"  href="img/gallery/gallery-photo-9.jpg">
           <img src="img/gallery/gallery-photo-9.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-8.jpg">
+        <a class="filtr-item parapeti"  href="img/gallery/gallery-photo-8.jpg">
           <img src="img/gallery/gallery-photo-8.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-4.jpg">
+        <a class="filtr-item parapeti"  href="img/gallery/gallery-photo-4.jpg">
           <img src="img/gallery/gallery-photo-4.jpg" alt=""/>
         </a>
         
-        <a href="img/gallery/gallery-photo-6.jpg">
+        <a class="filtr-item parapeti"  href="img/gallery/gallery-photo-6.jpg">
           <img src="img/gallery/gallery-photo-6.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-20.jpg">
+        <a class="filtr-item parapeti" href="img/gallery/gallery-photo-20.jpg">
           <img src="img/gallery/gallery-photo-20.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-18.jpg">
+        <a class="filtr-item parapeti"   href="img/gallery/gallery-photo-18.jpg">
           <img src="img/gallery/gallery-photo-18.jpg" alt=""/>
         </a>
         
-        <a href="img/gallery/gallery-photo-29.jpeg">
+        <a class="filtr-item parapeti"  href="img/gallery/gallery-photo-29.jpeg">
           <img src="img/gallery/gallery-photo-29.jpeg" alt=""/>
         </a>
         
-        <a href="img/gallery/gallery-photo-17.jpg">
+        <a class="filtr-item vrati"  href="img/gallery/gallery-photo-17.jpg">
           <img src="img/gallery/gallery-photo-17.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-28.jpg">
+        <a class="filtr-item vetrozashtitni"   href="img/gallery/gallery-photo-28.jpg">
           <img src="img/gallery/gallery-photo-28.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-13.jpg">
+        <a class="filtr-item pvc-konstrukcii"   href="img/gallery/gallery-photo-13.jpg">
           <img src="img/gallery/gallery-photo-13.jpg" alt=""/>
         </a>
-        <a href="img/gallery/gallery-photo-22.jpg">
+        <a class="filtr-item muzeini-vitrini"  href="img/gallery/gallery-photo-22.jpg">
           <img src="img/gallery/gallery-photo-22.jpg" alt=""/>
         </a>
         
-        <a href="img/stukleni-vitrini_2.jpg">
+        <a class="filtr-item muzeini-vitrini"   href="img/stukleni-vitrini_2.jpg">
           <img src="img/stukleni-vitrini_2.jpg" alt=""/>
         </a>
         
-        <a href="img/gallery/gallery-photo-24.jpg">
+        <a class="filtr-item muzeini-vitrini"   href="img/gallery/gallery-photo-24.jpg">
           <img src="img/gallery/gallery-photo-24.jpg" alt=""/>
         </a>
         
-        <a href="img/stukleni-vitrini_4.jpg">
+        <a  class="filtr-item muzeini-vitrini"  href="img/stukleni-vitrini_4.jpg">
           <img src="img/stukleni-vitrini_4.jpg" alt=""/>
         </a>
         
-        <a href="img/gallery/gallery-photo-26.jpg">
+        <a class="filtr-item muzeini-vitrini"  href="img/gallery/gallery-photo-26.jpg">
           <img src="img/gallery/gallery-photo-26.jpg" alt=""/>
         </a>
         
-        <a href="img/gallery/gallery-photo-27.jpg">
+        <a class="filtr-item muzeini-vitrini"  href="img/gallery/gallery-photo-27.jpg">
           <img src="img/gallery/gallery-photo-27.jpg" alt=""/>
         </a>
         
-        
+      </div>
         
       </div>
      </div>
@@ -1067,9 +1110,10 @@
       </div>
     </div>
     <div class="overlay hidden"></div>
-    <script defer src="js/script.js"></script>
+    <script defer type="module" src="js/script.js"></script>
     <script defer src="js/navHover.js"></script>
     <script defer src="js/modalHandler.js"></script>
     <script defer src="js/smoothScroling.js"></script>
+    
   </body>
 </html>
