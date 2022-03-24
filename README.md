@@ -1,11 +1,11 @@
-<h1> Static website from scratch for bulgarian brand which should be used to present the brand identity on the web</h1>
+<h1> Static website from scratch written in HTML,CSS,JS,JQUERY</h1>
 
-<h4> The website is not yet finished but the biggest part from the desktop web-page is implemented </h4>
+<h4> The website is not finished yet, but the biggest part from the web-page is implemented </h4>
 
 <h2>TODOS</h2>
 
 <ul>
-<li>Responsivnes to smaller laptops,tablets and mobile</li>
+<li>Responsivnes(75% ready) to mobile phones on the home page</li>
 <li>Fix the sticky navbar by gallery</li>
 <li>Optimization of images and code</li>
 <li>Deployment</li>

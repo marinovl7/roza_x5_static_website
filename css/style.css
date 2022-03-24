@@ -54,17 +54,27 @@ body {
   padding: 0 3.2rem;
   margin: 0 auto;
 }
-.main-nav {
+.section {
+  transition: transform 1s, opacity 1s;
+}
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
+  border-bottom: 2px solid #eb7e7e;
   padding: 3.2rem;
-  font-size: 2rem;
   height: 8rem;
   box-shadow: 0 1.2rem 2.4rem rgba(#000, #000, #000, 0.5);
-  border-bottom: 2px solid #eb7e7e;
+  background-color: #fff;
+  width: 100%;
+  font-size: 2rem;
 }
+
 .main-nav-items {
   display: flex;
   gap: 3.2rem;
@@ -103,6 +113,21 @@ body {
   background-color: rgba(255, 255, 255, 0.95);
   z-index: 9999999999;
   width: 100%;
+}
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  z-index: 999999;
+}
+.btn-mobile-nav ion-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.btn-mobile-nav ion-icon[name="close-outline"] {
+  display: none;
 }
 /* ****************************************************** */
 /* *******Modal Contact*************** */
@@ -485,11 +510,13 @@ body {
 /* ****************************************************** */
 
 .flex-container-choose-us {
-  display: flex;
-  gap: 4.8rem;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  column-gap: 4.8rem;
+  row-gap: 4.8rem;
+  justify-items: center;
+  align-items: start;
   margin-bottom: 4.8rem;
+  grid-template-columns: repeat(4, 1fr);
 }
 .flex-item-choose-us {
   padding: 2rem 1.6rem 2rem 1.6rem;
@@ -568,10 +595,12 @@ body {
   height: 50rem;
 }
 .flex-container-opinions {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 4.8rem;
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  column-gap: 4.8rem;
+  row-gap: 4.8rem;
+  grid-template-columns: repeat(4, 1fr);
 }
 .flex-item {
   max-width: 24rem;
@@ -609,7 +638,7 @@ body {
   color: #888;
   text-align: left !important;
   font-size: 1.2rem;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 /* ****************************************************** */
 /* *******Section cards*************** */
@@ -752,7 +781,7 @@ body {
 .gallery-grid {
   display: grid;
 
-  grid-template-columns: 20rem 3fr;
+  grid-template-columns: 22rem 3fr;
   width: 100%;
   column-gap: 3.2rem;
 }
@@ -902,9 +931,9 @@ body {
 .gallery-sidebar-list li p span {
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 2rem;
   transform: translateY(-50%);
-  font-size: 22px;
+  font-size: 2.2rem;
   transition: transform 0.4s;
 }
 .gallery-sidebar-list li p span.rotate {
@@ -924,12 +953,15 @@ body {
   opacity: 0.8;
 }
 .flex-container-footer {
+  margin-top: 6.4rem;
   padding: 4.8rem 4.8rem 4.8rem 1.2rem;
   background-color: #eb7e7e;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
   align-items: flex-start;
-  gap: 4.8rem;
+  column-gap: 4.8rem;
+  row-gap: 4.8rem;
 }
 .flex-item-footer {
   max-width: 40rem;
@@ -1016,15 +1048,15 @@ body {
 .custom-shape-divider-bottom-hero svg {
   position: relative;
   display: block;
-  width: calc(139% + 1.3px);
-  height: 85px;
+  width: calc(139% + 0.13rem);
+  height: 8.5rem;
 }
 
 .custom-shape-divider-bottom-hero .shape-fill {
   fill: #ffffff;
 }
 .custom-shape-divider-features svg {
-  height: 70px !important;
+  height: 7rem !important;
 }
 .custom-shape-divider-bottom {
   position: absolute;
@@ -1039,8 +1071,8 @@ body {
 .custom-shape-divider-bottom svg {
   position: relative;
   display: block;
-  width: calc(139% + 1.3px);
-  height: 100px;
+  width: calc(139% + 0.13rem);
+  height: 10rem;
   transform: rotateY(180deg);
 }
 
@@ -1060,8 +1092,8 @@ body {
 .custom-shape-divider-top svg {
   position: relative;
   display: block;
-  width: calc(139% + 1.3px);
-  height: 69px;
+  width: calc(139% + 0.13rem);
+  height: 6.9rem;
   transform: rotateY(180deg);
 }
 

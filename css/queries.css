@@ -1,0 +1,246 @@
+/* 1300px */
+@media (max-width: 81.25em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .container {
+    max-width: 120rem;
+  }
+
+  .img-height-adjust {
+    height: 47.4rem;
+  }
+  .z-img {
+    width: 50rem;
+    height: 26.6rem;
+  }
+  .card-text {
+    font-size: 1.3rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .vz-htext {
+    font-size: 1.6rem;
+  }
+  .characteristics-special {
+    font-size: 1.4rem;
+  }
+  .gallery-grid .filtr-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .features-container {
+    max-width: 110rem;
+  }
+  .card {
+    height: 45rem;
+  }
+  .card-text-special {
+    font-size: 0;
+  }
+  .heading-card-special-v1 {
+    font-size: 0;
+  }
+  .container-gallery {
+    max-width: 110rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+  .grid-container-pvc-dograma {
+    column-gap: 4.8rem;
+  }
+  .grid-container-z {
+    column-gap: 2.4rem;
+    row-gap: 7.2rem;
+  }
+  .container-vetrozashtitni-zavesi {
+    gap: 4.8rem;
+  }
+  .container-sv {
+    gap: 4.8rem;
+  }
+  .heading-featured-in {
+    font-size: 1.4rem !important;
+  }
+}
+/* 1030px */
+@media (max-width: 64.375em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 59em) {
+  html {
+    font-size: 42%;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+  .slider {
+    width: 60rem;
+    height: 50rem;
+  }
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3.2rem;
+  }
+  .hero-container {
+    gap: 0rem;
+  }
+  .text-as-subheading {
+    text-align: center;
+  }
+  /* mobile navigation */
+  .btn-mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    position: absolute;
+    padding-top: 10rem;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 9999;
+    display: flex;
+    align-items: flex-start;
+
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+  .main-nav-items {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+  .nav-open .btn-mobile-nav ion-icon[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .btn-mobile-nav ion-icon[name="menu-outline"] {
+    display: none;
+  }
+  .contact {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 50em) {
+  .featured-in-image {
+    height: 5rem;
+  }
+  .flex-container-opinions {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15rem 0 15rem;
+    column-gap: 0;
+  }
+  .container-opinions {
+    height: 80rem;
+    padding-bottom: 0 !important;
+  }
+  .opinion-text {
+    font-size: 1.4rem;
+  }
+  .flex-item {
+    max-width: 30rem;
+  }
+  .person-name {
+    font-size: 1.8rem;
+  }
+  .text-as-subheading {
+    font-size: 2rem;
+  }
+  .pvc-dograma-vorteile,
+  .characteristics {
+    font-size: 1.6rem;
+  }
+  .flex-container-choose-us {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+    padding: 0 15rem 0 15rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery-grid .filtr-item {
+    height: 35rem;
+  }
+  .link-learn-more {
+    padding: 2rem 4rem;
+  }
+}
+@media (max-width: 38.125em) {
+  .flex-container-footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+  .footer-vruzka-s-nas {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 34.375em) {
+  .main-nav {
+    width: 50%;
+  }
+}
+@media (max-width: 31.25em) {
+  .flex-container-footer {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    padding-left: 4.8rem;
+  }
+  .footer-vruzka-s-nas {
+    grid-row: 3;
+  }
+  .footer-about-us {
+    grid-row: 1;
+  }
+  .footer-links {
+    grid-row: 2;
+  }
+  .pvc-aluminii-dograma {
+    grid-template-columns: 1fr;
+  }
+  .aluminii-dograma {
+    grid-template-columns: 1fr;
+  }
+  .logo {
+    font-size: 3.2rem;
+  }
+  .btn-mobile-nav ion-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

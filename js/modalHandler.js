@@ -7,6 +7,8 @@ const openModal = function (e) {
   e.preventDefault();
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
+  console.log(header);
+  header.classList.toggle("nav-open");
 };
 
 const closeModal = function (e) {

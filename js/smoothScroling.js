@@ -24,7 +24,7 @@ const linkESORFooter = document.querySelector(".esor");
 const linkStukleniVitrini = document.querySelector(
   ".main-nav-link-stukleni-vitrini"
 );
-
+const header = document.querySelector(".header");
 const linkStukleniVitriniFooter = document.querySelector(".sv");
 const linkGaleriaFooter = document.querySelector(".gallery-footer");
 
@@ -35,16 +35,19 @@ linkLearnMore.addEventListener("click", function (e) {
 buttonProducts.addEventListener("click", (e) => {
   e.preventDefault();
   sectionDograma.scrollIntoView({ behavior: "smooth" });
+  header.classList.toggle("nav-open");
 });
 
 buttonBeginning.addEventListener("click", (e) => {
   e.preventDefault();
   sectionHeroS.scrollIntoView({ behavior: "smooth" });
+  header.classList.toggle("nav-open");
 });
 
 buttonShtori.addEventListener("click", (e) => {
   e.preventDefault();
   sectionShtori.scrollIntoView({ behavior: "smooth" });
+  header.classList.toggle("nav-open");
 });
 
 linkShtoriFooter.addEventListener("click", (e) => {
@@ -72,6 +75,7 @@ linkVZFooter.addEventListener("click", (e) => {
 linkStukleniVitrini.addEventListener("click", (e) => {
   e.preventDefault();
   sectionStukleniVitrini.scrollIntoView({ behavior: "smooth" });
+  header.classList.toggle("nav-open");
 });
 linkStukleniVitriniFooter.addEventListener("click", (e) => {
   e.preventDefault();

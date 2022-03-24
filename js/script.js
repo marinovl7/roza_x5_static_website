@@ -10,6 +10,8 @@ const year = document.querySelector(".year");
 const sectionHero = document.querySelector(".section-hero");
 const mainNav = document.querySelector(".main-nav");
 const slider = document.querySelector(".slider");
+const btnMobileNav = document.querySelector(".btn-mobile-nav");
+const header = document.querySelector(".header");
 
 //Getting the current year for the footer and the copywrite
 year.textContent = new Date().getFullYear();
@@ -69,7 +71,7 @@ document.addEventListener("keydown", function (e) {
 dotContainer.addEventListener("click", function (e) {
   if (e.target.classList.contains("dots__dot")) {
     const slide = e.target.dataset.slide;
-    console.log(slide);
+
     currSlide = +slide;
     goToSlide(slide);
     activateDot(slide);
@@ -98,26 +100,52 @@ function setSlideVisibility(slideNum) {
   });
 }
 
-lightGallery(document.querySelector(".gallery"));
-
-const stickyNav = function (entries) {
-  const [entry] = entries;
-  console.log(entry);
-  if (!entry.isIntersecting) {
-    mainNav.classList.add("sticky");
-  } else {
-    mainNav.classList.remove("sticky");
-  }
-};
-
-const navHeight = mainNav.getBoundingClientRect().height;
-const headerObserver = new IntersectionObserver(stickyNav, {
-  root: null,
-  threshold: 0,
-  rootMargin: `-${navHeight}px`,
+lightGallery(document.querySelector(".gallery"), {
+  licenseKey: "B51095C9-5BD54D57-8BD5CF47-070929C6",
 });
 
-headerObserver.observe(sectionHero);
+// const stickyNav = function (entries) {
+//   const [entry] = entries;
+//   console.log(entry);
+//   if (!entry.isIntersecting) {
+//     mainNav.classList.add("sticky");
+//   } else {
+//     mainNav.classList.remove("sticky");
+//   }
+// };
+
+// const navHeight = mainNav.getBoundingClientRect().height;
+// const headerObserver = new IntersectionObserver(stickyNav, {
+//   root: null,
+//   threshold: 0,
+//   rootMargin: `-${navHeight}px`,
+// });
+
+// headerObserver.observe(sectionHero);
+
+//Reveal sections
+const allSections = document.querySelectorAll(".section");
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+  else entry.target.classList.remove("section-hidden");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+const sectionGallery = document.getElementById("galeria");
+allSections.forEach(function (section) {
+  if (section !== sectionGallery) {
+    section.classList.add("section-hidden");
+    sectionObserver.observe(section);
+  }
+});
 
 const gallery = document.querySelector(".section-gallery");
 
@@ -125,9 +153,10 @@ $(document).ready(function () {
   $(".gallery-search-button").click(function () {
     const value = $(this).attr("data-filter");
     if (value === "all") {
-      $(".filtr-item").show("12000");
+      $(".filtr-item").show("500");
     } else {
       $(".filtr-item").not(`.${value}`).hide("500");
+      console.log($(".filtr-item").not(`.${value}`)[0].parentElement);
       $(".filtr-item").filter(`.${value}`).show("500");
     }
   });
@@ -145,4 +174,8 @@ $(".serv-btn").click(function () {
 });
 $("nav ul li").click(function () {
   $(this).addClass("active").siblings().removeClass("active");
+});
+
+btnMobileNav.addEventListener("click", function (e) {
+  header.classList.toggle("nav-open");
 });
