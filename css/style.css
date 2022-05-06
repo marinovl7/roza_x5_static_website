@@ -81,6 +81,7 @@ body {
   list-style: none;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .main-nav-link:link,
 .main-nav-link:visited,
@@ -114,19 +115,25 @@ body {
   z-index: 9999999999;
   width: 100%;
 }
-.btn-mobile-nav {
+.btn-mobile-nav,
+.btn-mobile-nav__tab,
+.btn-mobile-nav__gallery {
   border: none;
   background: none;
   cursor: pointer;
   display: none;
   z-index: 999999;
 }
-.btn-mobile-nav ion-icon {
+.btn-mobile-nav ion-icon,
+.btn-mobile-nav__tab ion-icon,
+.btn-mobile-nav__gallery ion-icon {
   height: 4.8rem;
   width: 4.8rem;
   color: #333;
 }
-.btn-mobile-nav ion-icon[name="close-outline"] {
+.btn-mobile-nav ion-icon[name="close-outline"],
+.btn-mobile-nav__tab ion-icon[name="close-outline"],
+.btn-mobile-nav__gallery ion-icon[name="close-outline"] {
   display: none;
 }
 /* ****************************************************** */
@@ -505,6 +512,12 @@ body {
   display: block;
   visibility: visible;
 }
+.features-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 2rem;
+}
 /* ****************************************************** */
 /* *******Choose us*************** */
 /* ****************************************************** */
@@ -698,9 +711,10 @@ body {
   padding: 4.8rem 0 9.6rem 0;
 }
 .container-vetrozashtitni-zavesi {
-  display: flex;
-  gap: 9.3rem;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 9.3rem;
+  justify-items: center;
   align-items: center;
 }
 .img-vz {
@@ -728,9 +742,10 @@ body {
   padding: 0 0 9.6rem 0;
 }
 .container-sv {
-  display: flex;
-  gap: 9.3rem;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 9.3rem;
+  justify-items: center;
   align-items: center;
 }
 .grid-container-sv {
@@ -816,6 +831,7 @@ body {
   visibility: hidden;
 }
 .container-gallery {
+  position: relative;
   background-color: #f2f5f9;
 
   padding-bottom: 3.2rem;
@@ -1183,6 +1199,7 @@ body {
   font-size: 1.4rem;
   margin-left: 3.2rem;
   color: inherit;
+  transition: all 0.3s;
 }
 .flex-container {
   display: flex;
@@ -1195,10 +1212,11 @@ body {
 .tel-phone:visited {
   font-size: 1.4rem;
   color: inherit;
+  transition: all 0.3s;
 }
 .tel-phone:hover,
 .tel-phone:active,
 .adress-text:hover,
 .adress-text:active {
-  color: #444;
+  color: #222;
 }

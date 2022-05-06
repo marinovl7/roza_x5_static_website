@@ -11,7 +11,11 @@ const sectionHero = document.querySelector(".section-hero");
 const mainNav = document.querySelector(".main-nav");
 const slider = document.querySelector(".slider");
 const btnMobileNav = document.querySelector(".btn-mobile-nav");
+const btnMobileNavTab = document.querySelector(".btn-mobile-nav__tab");
 const header = document.querySelector(".header");
+const featuresContainer = document.querySelector(".features-container");
+const galleryContainer = document.querySelector(".container-gallery");
+const btnMobileNavGallery = document.querySelector(".btn-mobile-nav__gallery");
 
 //Getting the current year for the footer and the copywrite
 year.textContent = new Date().getFullYear();
@@ -86,8 +90,10 @@ const allButons = Array.from(document.querySelectorAll(".btn-change"));
 allButons.forEach((btnChange) => {
   btnChange.addEventListener("click", function (e) {
     allButons.forEach((btn) => {
-      if (btn === e.target) btn.classList.add("btn-active");
-      else btn.classList.remove("btn-active");
+      if (btn === e.target) {
+        featuresContainer.classList.toggle("nav-open__tab");
+        btn.classList.add("btn-active");
+      } else btn.classList.remove("btn-active");
     });
     setSlideVisibility(e.target.dataset.slide);
   });
@@ -151,6 +157,7 @@ const gallery = document.querySelector(".section-gallery");
 
 $(document).ready(function () {
   $(".gallery-search-button").click(function () {
+    $(".container-gallery").toggleClass("nav-open__gallery");
     const value = $(this).attr("data-filter");
     if (value === "all") {
       $(".filtr-item").show("500");
@@ -178,4 +185,10 @@ $("nav ul li").click(function () {
 
 btnMobileNav.addEventListener("click", function (e) {
   header.classList.toggle("nav-open");
+});
+btnMobileNavTab.addEventListener("click", (e) => {
+  featuresContainer.classList.toggle("nav-open__tab");
+});
+btnMobileNavGallery.addEventListener("click", (e) => {
+  galleryContainer.classList.toggle("nav-open__gallery");
 });

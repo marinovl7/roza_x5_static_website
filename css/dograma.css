@@ -438,6 +438,7 @@ strong {
   font-size: 1.4rem;
   margin-left: 3.2rem;
   color: inherit;
+  transition: all 0.3s;
 }
 .flex-container {
   display: flex;
@@ -450,6 +451,7 @@ strong {
 .tel-phone:visited {
   font-size: 1.4rem;
   color: inherit;
+  transition: all 0.3s;
 }
 .tel-phone:hover,
 .tel-phone:active,
@@ -545,9 +547,12 @@ strong {
 @media (max-width: 38.125em) {
   .flex-container-footer {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 3.2rem;
   }
   .footer-vruzka-s-nas {
     grid-column: span 2;
+    align-self: center;
+    justify-self: center;
   }
 }
 
@@ -564,6 +569,7 @@ strong {
   }
   .footer-vruzka-s-nas {
     grid-row: 3;
+    justify-self: start;
   }
   .footer-about-us {
     grid-row: 1;
@@ -587,4 +593,15 @@ strong {
   .grid-container {
     grid-template-columns: 1fr;
   }
+}
+.adress-title {
+  font-size: 2rem;
+}
+.tel-phone:link,
+.tel-phone:visited {
+  font-size: 1.8rem;
+}
+.adress-text:link,
+.adress-text:visited {
+  font-size: 1.8rem;
 }
