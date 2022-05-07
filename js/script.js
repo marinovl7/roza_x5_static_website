@@ -16,6 +16,8 @@ const header = document.querySelector(".header");
 const featuresContainer = document.querySelector(".features-container");
 const galleryContainer = document.querySelector(".container-gallery");
 const btnMobileNavGallery = document.querySelector(".btn-mobile-nav__gallery");
+const filtrButtons = document.querySelectorAll(".filtr-item");
+console.log(filtrButtons);
 
 //Getting the current year for the footer and the copywrite
 year.textContent = new Date().getFullYear();
@@ -192,3 +194,8 @@ btnMobileNavTab.addEventListener("click", (e) => {
 btnMobileNavGallery.addEventListener("click", (e) => {
   galleryContainer.classList.toggle("nav-open__gallery");
 });
+filtrButtons.forEach((item) =>
+  item.addEventListener("click", function (e) {
+    galleryContainer.classList.toggle("nav-open__gallery");
+  })
+);

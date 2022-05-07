@@ -140,6 +140,12 @@ body {
 .btn-mobile-nav__gallery ion-icon[name="close-outline"] {
   display: none;
 }
+/* #lg-backdrop-1 {
+  z-index: 99999;
+} */
+.lg-object {
+  z-index: 999999;
+}
 /* ****************************************************** */
 /* *******Modal Contact*************** */
 /* ****************************************************** */
