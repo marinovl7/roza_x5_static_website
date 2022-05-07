@@ -395,6 +395,9 @@
   .logo {
     font-size: 3.2rem;
   }
+  .logo-img {
+    width: 20rem;
+  }
   .btn-mobile-nav ion-icon {
     width: 3.2rem;
     height: 3.2rem;
