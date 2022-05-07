@@ -355,6 +355,9 @@ strong {
 .icon-container-footer:active ion-icon {
   color: #f7cbcb;
 }
+.logo-img {
+  width: 25rem;
+}
 
 /* ****************************************************** */
 /* *******MODAL*************** */
@@ -560,6 +563,10 @@ strong {
   .main-nav {
     width: 50%;
   }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 31.25em) {
   .flex-container-footer {
@@ -576,6 +583,9 @@ strong {
   }
   .footer-links {
     grid-row: 2;
+  }
+  .logo-img {
+    width: 20rem;
   }
   .pvc-aluminii-dograma {
     grid-template-columns: 1fr;
