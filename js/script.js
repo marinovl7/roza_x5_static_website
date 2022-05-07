@@ -196,6 +196,8 @@ btnMobileNavGallery.addEventListener("click", (e) => {
 });
 filtrButtons.forEach((item) =>
   item.addEventListener("click", function (e) {
-    galleryContainer.classList.toggle("nav-open__gallery");
+    if (galleryContainer.classList.contains("nav-open__gallery")) {
+      galleryContainer.classList.remove("nav-open__gallery");
+    }
   })
 );
