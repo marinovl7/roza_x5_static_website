@@ -622,10 +622,7 @@
     color: #333;
     /* border-left: 3px solid #666; */
   }
-  /* test */
-  /* .gallery-sidebar-list li.active .border-left:first-child {
-    border-left: 3px solid #f2f5f9;
-  } */
+
   .gallery-sidebar-list li.active .border-left {
     border-left-color: #333;
   }
