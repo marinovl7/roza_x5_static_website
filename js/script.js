@@ -110,6 +110,7 @@ function setSlideVisibility(slideNum) {
 
 lightGallery(document.querySelector(".gallery"), {
   licenseKey: "B51095C9-5BD54D57-8BD5CF47-070929C6",
+  mobileSettings: { showCloseIcon: true },
 });
 
 // const stickyNav = function (entries) {
