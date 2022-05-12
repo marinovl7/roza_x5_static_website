@@ -520,13 +520,13 @@
     height: 35rem;
   }
   .img-vz {
-    max-width: 40rem;
+    max-width: 35rem;
     max-height: 36rem;
   }
 
   .grid-container-sv {
-    min-width: 40rem;
-    max-width: 40rem;
+    min-width: 35rem;
+    max-width: 35rem;
     min-height: 40rem;
   }
   .featured-in-image {
