@@ -612,7 +612,8 @@ body {
 /* *******Opinions*************** */
 /* 
 ****************************************************** */
-.container-opinions {
+/* .container-opinions {
+  display: none;
   position: relative;
   background-color: #f2f5f9;
   padding: 10rem 3.2rem 6.4rem 3.2rem;
@@ -665,7 +666,7 @@ body {
   text-align: left !important;
   font-size: 1.2rem;
   line-height: 1.6;
-}
+} */
 /* ****************************************************** */
 /* *******Section cards*************** */
 /* ****************************************************** */

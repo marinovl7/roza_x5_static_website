@@ -438,13 +438,18 @@
   .slide > img {
     width: 45rem;
   }
+  .image-width {
+    width: 45rem !important;
+  }
   .img-box-pvc img {
     height: 45rem;
-    width: auto;
+    /* width: auto; */
+    width: 40rem;
   }
   .img-box-pvc {
     height: 45rem;
-    width: auto;
+    /* width: auto; */
+    width: 40rem;
   }
   .link-botom:visited,
   .link-botom:link {
@@ -455,7 +460,7 @@
     width: 45rem !important;
   }
   .features-container {
-    max-width: 40rem;
+    max-width: 50rem;
   }
   .feature-img {
     width: 27rem;
@@ -664,12 +669,15 @@
     min-height: 45rem;
   }
   .img-box-pvc {
-    width: 40rem;
+    width: 35rem;
+    height: 35rem;
   }
   .img-box-pvc img {
-    width: 40rem;
+    width: 35rem;
+    height: 35rem;
   }
   .img-height-adjust {
-    width: 40rem !important;
+    width: 35rem !important;
+    height: 35rem !important;
   }
 }
