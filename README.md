@@ -15,7 +15,8 @@ projects of the company,thanks to the filtering gallery.
  - ### Responsiveness
   The website is fully responsive thanks to the CSS `grid` and `flexbox`
   
-  ![mobile-view](https://user-images.githubusercontent.com/99186919/168275332-a1517901-e61b-4edb-8636-ba836978d87f.gif)
+ ![mobile-view](https://user-images.githubusercontent.com/99186919/168276865-710a900f-900d-41cd-8147-8cafb48a7a7c.gif)
+
 
  
 - ### Filtering gallery using lightgallery.js
