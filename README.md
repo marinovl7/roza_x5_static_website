@@ -3,7 +3,7 @@
 <h2>Functionalities</h2>
 
 <ul>
-  <li><h3>The website is fully responsive to all devices</h3></li><br><br>
+  <li><h3>The website is fully responsive to all devices</h3></li><br/><br/>
    
      ![GIF-220513_132617](https://user-images.githubusercontent.com/99186919/168274281-5a5b3f53-41b6-45cc-a29a-0685c554b2c8.gif)
 
