@@ -4,7 +4,7 @@
 
 <ul>
 <li>The website is fully responsive to all devices</li>
-<li>Gallery which can filter images on a given prefix and can visualise them using the open-source lightgallery.js</li><br><br>
+<li>**Gallery which can filter images on a given prefix and can visualise them using the open-source lightgallery.js**</li><br><br>
   
   ![gallery-mobile](https://user-images.githubusercontent.com/99186919/168271616-a8c8a4e8-4f1e-4e98-bf4c-a83067758d70.gif)
 
