@@ -1,27 +1,25 @@
-<h1> Static website from scratch written in HTML,CSS,JS,JQUERY</h1>
+# RozaX5
+`Live:`
 
-<h2>Functionalities</h2>
+## General Description
+*RozaX5* is a website made for a bulgarian based company,which should represent the brand's identity on the web.
 
-<ul>
-  <li><h3>Responsive on all devices</h3></li><br><br>
+## Product Overview
+**Programming Languages:** *CSS*, *Javascript*,*HTML*
+
+### Business Case for the Product
+The product is designed to provide the customer information about the services that the company provides,and of course can see some of the
+projects of the company,thanks to the filtering gallery.
+
+ ## Project Features
+ - ### Responsiveness
+  The website is fully responsive thanks to the CSS `grid` and `flexbox`
   
-         ![mobile](https://user-images.githubusercontent.com/99186919/168274617-c09f8c7d-e2a1-4ecc-aeec-fffd1add409d.gif)
+  ![mobile-view](https://user-images.githubusercontent.com/99186919/168275332-a1517901-e61b-4edb-8636-ba836978d87f.gif)
 
-  
-  <br><br>
+ 
+- ### Filtering gallery using lightgallery.js
 
+![gallery](https://user-images.githubusercontent.com/99186919/168275492-e7a01ba2-d902-45a7-a4bd-246d37bd5590.gif)
 
-<!-- <li><h3>Gallery which can filter images on a given prefix and can visualise them using the open-source lightgallery.js</h3></li><br><br>
-  
-  ![gallery-mobile](https://user-images.githubusercontent.com/99186919/168271616-a8c8a4e8-4f1e-4e98-bf4c-a83067758d70.gif)           
-  
-  <br><br> -->
-  
-<li>Smooth scroling(The prefect finishing for every web page)</li>
-<li>Image slider</li>
-
-  
-
-I've done everything on this web-page, which means that the code and the design ideas are mine <br>
-This is my first website for a corporate brand since i started working with JS,HTML and CSS
 
