@@ -4,7 +4,8 @@
 
 <ul>
   <li><h3>The website is fully responsive to all devices</h3></li><br><br>
-    ![mobile-view-samsung](https://user-images.githubusercontent.com/99186919/168273993-7bec0df6-2053-41b1-8c9d-fdcb5fdc2892.gif)
+   
+     ![GIF-220513_132617](https://user-images.githubusercontent.com/99186919/168274281-5a5b3f53-41b6-45cc-a29a-0685c554b2c8.gif)
 
   <br><br>
 
