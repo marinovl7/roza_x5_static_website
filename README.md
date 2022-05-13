@@ -5,7 +5,8 @@
 <ul>
   <li><h3>The website is fully responsive to all devices</h3></li><br/><br/>
    
-     ![GIF-220513_132617](https://user-images.githubusercontent.com/99186919/168274281-5a5b3f53-41b6-45cc-a29a-0685c554b2c8.gif)
+    ![GIF-220513_130722](https://user-images.githubusercontent.com/99186919/168274473-9bc4136d-6e54-4e5e-bf09-2d1a6820c118.gif)
+
 
   <br><br>
 
