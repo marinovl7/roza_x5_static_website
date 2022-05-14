@@ -14,7 +14,10 @@ body {
   font-weight: 400;
   color: #555;
 }
-
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
