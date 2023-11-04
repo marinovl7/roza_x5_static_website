@@ -1200,7 +1200,18 @@ body {
   height: 3.6rem;
   align-items: center;
 }
+.icon-heading-container.invisible {
+  display: flex;
+  gap: 1.2rem;
+  height: 3.6rem;
+  align-items: flex-start;
+}
 .icon-modal {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.icon-modal.invisible {
+  visibility: hidden;
   width: 2.4rem;
   height: 2.4rem;
 }
@@ -1209,9 +1220,7 @@ body {
 }
 .adress-text:link,
 .adress-text:visited {
-  margin-top: 0.8rem;
   font-size: 1.4rem;
-  margin-left: 3.2rem;
   color: inherit;
   transition: all 0.3s;
 }
